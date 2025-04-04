@@ -1,0 +1,114 @@
+/* EmployeeForm.css */
+
+/* General container styling */
+div {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    
+}
+
+.employee-container{
+    
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+    padding: 20px;
+}
+
+/* Form title */
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Form container */
+form {
+    max-width: 600px; /* Wider form for better usability */
+    margin: 0 auto; /* Center the form */
+    padding: 35px;
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
+}
+
+/* Form input fields and labels */
+form div {
+    margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Full width input fields */
+    padding: 12px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 6px; /* Rounded corners for inputs */
+    font-size: 1rem;
+}
+
+/* Checkbox container styling */
+input[type="checkbox"] {
+    margin-right: 8px; /* Space between checkbox and label text */
+}
+
+label[for="availability"] {
+    font-weight: bold;
+}
+
+/* Checkbox labels styling */
+label[for="availability"] + div label {
+    display: inline-block; /* Inline checkboxes */
+    margin-right: 15px; /* Space between checkboxes */
+}
+
+/* Submit button styling */
+button {
+    display: block;
+    width: 100%; /* Full-width button */
+    padding: 14px;
+    background-color: #011122; /* Blue background */
+    color: white; /* White text */
+    border-radius: 8px; /* Rounded corners for buttons */
+    border: none; /* No border */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect transition */
+}
+
+button:hover {
+    background-color: #764ba2; /* Darker blue on hover */ 
+}
+
+/* Success or error message styling */
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+p.success-message {
+    color: green; /* Green for success messages */
+}
+
+p.error-message {
+    color: red; /* Red for error messages */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; /* Reduce padding on smaller screens */
+        width: calc(100% - 40px); /* Add some breathing room on mobile devices */
+        box-shadow: none; /* Remove shadow for a cleaner look on mobile devices */
+        border-radius: 8px; /* Slightly less rounded corners on mobile screens */
+        background-color:#f7f7f7
+}
+}

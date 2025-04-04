@@ -1,0 +1,71 @@
+/* Hero.css */
+
+/* Hero container styling */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+}
+
+/* Hero title styling */
+.hero-container h1 {
+    font-size: 3rem; /* Large title font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 30px; /* Space below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+/* Button group container */
+.button-group {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Hero buttons styling */
+.hero-button {
+    padding: 15px 30px; /* Larger padding for bigger buttons */
+    font-size: 1.2rem; /* Larger button text size */
+    font-weight: bold; /* Bold button text */
+    color: white; /* Blue text color */
+    background-color: #011122; /* White button background */
+    border-radius: 50px; /* Fully rounded buttons */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect transition */
+}
+.button-group a {
+    text-decoration: none; /* Remove underline from <Link> elements */
+}
+
+/* Hover effect for buttons */
+.hero-button:hover {
+    background-color:  #764ba2; /* Light gray background on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 2.5rem; /* Smaller title size on tablets and phones */
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 15px;
+    }
+
+    .hero-button {
+        width: calc(100% - 40px); /* Full-width buttons with some margin on mobile devices */
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 8px; /* Less rounded corners for smaller screens */
+    }
+}
